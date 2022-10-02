@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url(../images/4.jpg);/* conic-gradient(rgb(236, 233, 61), rgb(34, 197, 48),rgb(223, 73, 27));*/
+}
+h1{
+    font-size: 3em;
+}
+.nav{
+    display: inline-flex;
+    gap: 20px;
+}
+.nav:hover{
+    color: red;
+}
+.nav:visited{
+    color: purple;
+}
+.nav:link{ color: lawngreen; }
+
+b{ color: blue; }
+
+p.hometext{
+    color: rgb(41, 5, 202);
+    font-size: xx-large;
+    font-style: oblique;
+    text-decoration: 3px dotted underline;
+    text-decoration-color: brown;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+}
+
+.powered{
+    font-size: 16px;
+}
+
+
+.container{
+    display: flex;
+    flex: row;
+    margin-right: 30%;
+    margin-left: 10px;
+}
+
+span.animation{
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+span.animation{
+    width: 100px;
+    height: 100px;
+    background: repeating-linear-gradient(red, magenta, skyblue, rebeccapurple);
+    margin: 10px;
+    animation: animation 4s infinite 3s reverse;
+    border-radius: 100px;
+}
+
+span.col{
+    width: 30%;
+    border: 2px dotted black;
+    margin: 10px;
+    background: linear-gradient(red, yellow, green, blue);
+}
+
+.Link{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.form-control{
+    margin: 15px;
+}
+
+.form-row{
+    margin-left: 100px;
+}
+.form-header{
+    text-align: center;
+    margin: 10px 0 0 -15px ;
+}
+
+label{
+    font-size: 20px;
+}
+
+input[type="tel"]{
+    background-color: rgb(238, 186, 238);
+    width: 50%;
+    height: 25px;
+}
+
+input[type="email"]{
+    background-color: rgb(238, 186, 238);
+    margin-left: 50px;
+    width: 50%;
+    height: 25px;
+}
+input[type="text"]{
+    background-color: rgb(238, 186, 238);
+    margin-left: 20px;
+    width: 50%;
+    height: 25px;
+}
+input[type="submit"]{
+    color: red;
+    margin-left: 40%;
+    width: 90px;
+    height: 25px;
+}
+
+div.homeLayout{
+    width: 50%;
+    height: 400px;
+    margin-left: 40px;
+    background: url(../images/3.jpg);
+    color: aliceblue;
+    text-align: justify;
+}
+
+@keyframes animation{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@media (max-width: 500px){
+    span.container{
+        display: inline-flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    span.col{
+        width: 100%;
+        margin: 10px auto;
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(227, 232, 255);
+    }
+
+    body{ background: aquamarine url(../images/4.jpg); }
+
+    p.hometext{
+        color: rgb(41, 5, 202);
+        font-size: large;
+        font-style: oblique;
+        text-decoration: 3px dotted underline;
+        text-decoration-color: brown;
+        text-transform: capitalize;
+    }
+        
+    .form-control{
+        margin: 10px;
+    }
+
+    .form-row{
+        margin-left: 20px;
+    }
+    .form-header{
+        text-align: center;
+        margin: 10px auto ;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    input[type="tel"]{
+        background-color: rgb(238, 186, 238);
+        width: 50%;
+        height: 25px;
+    }
+
+    input[type="email"]{
+        background-color: rgb(238, 186, 238);
+        margin-left: 50px;
+        width: 50%;
+        height: 25px;
+    }
+    input[type="text"]{
+        background-color: rgb(238, 186, 238);
+        margin-left: 20px;
+        width: 50%;
+        height: 25px;
+    }
+    input[type="submit"]{
+        color: red;
+        right: 0;
+        width: 90px;
+        height: 25px;
+    }
+
+        div.homeLayout{
+        width: 340px;
+        height: 400px;
+        margin: 10px;
+        background: url(../images/3.jpg);
+        color: aliceblue;
+        text-align: justify;
+    }
+}

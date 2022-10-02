@@ -1,0 +1,212 @@
+div.body{
+    font-family: 'Times New Roman', Times, serif;
+   }
+
+img{
+    overflow: hidden;
+}
+
+/********************************************/
+/*
+Header navigation
+*/
+div.header{
+    padding: 20px;
+    min-height: 80px;
+    background-color: rgb(1, 1, 48);
+    color: #ffff;
+    position: fixed;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    gap: 20px;
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+a:active{
+    color: red;
+}
+
+/********************************************/
+/*
+Mystory Page
+*/
+div.mystory{
+    padding: 293px 10px 280px 10px;
+    text-align: center;
+}
+
+
+/********************************************/
+/*
+Training Page
+*/
+div.training{
+    padding: 293px 10px 280px 10px;
+    text-align: center;
+}
+
+
+/********************************************/
+/*
+Quote Page
+*/
+div.quote{
+    padding: 293px 10px 280px 10px;
+    text-align: center;
+}
+
+
+/********************************************/
+/*
+Banner Image
+*/
+
+
+div.banner{
+    padding: 15%;
+    background: url(/public/images/4.jpg);
+    background-position: left;
+}
+
+p.nickelodon{
+    width: 50%;
+    font-size: 4em;
+    font-weight: bolder;
+    text-decoration: wavy;
+    color: rgb(228, 0, 179);
+    margin-left: 6%;
+}
+
+p.nickelodon:hover{
+    color: rgb(75, 8, 15);
+}
+
+p.nick-shape{
+    width: 50%;
+    height: 100px;
+    border-radius: 20px 50px;
+    margin: -130px 0 0 0;
+    background: conic-gradient(rgb(33, 229, 255), rgb(16, 175, 2), rgb(244, 252, 10), rgb(255, 5, 5));
+}
+
+.locate-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    padding: 0 20%;
+    position: absolute;
+    border: none;
+    height: 10%;
+    width: 100%;
+    left: 0;
+    border-width: thick;
+}
+
+.fa-search{
+    border-radius: 20px 20px;
+    border: 3px solid rgb(82, 82, 82);
+    background: rgba(252, 248, 248, 0.995);
+    color: rgb(48, 163, 245);
+    font-size: 120%;
+    font-weight: 800;
+    width: 50%;
+    text-align: center;
+}
+
+.locate-me-input{
+    border-radius: 50px 20px;
+    border: 3px solid rgb(82, 82, 82);
+    width: 30%;
+    background: rgb(195, 195, 195);
+    font-size: 120%;
+    font-weight: 800;
+}
+
+.locate-me-input:hover{
+    background: rgb(149, 137, 146);
+    }
+
+.submitbtn{
+    border-radius: 50px 50px;
+    border: none;
+    width: 20%;
+    background: rgb(172, 12, 153);
+    color: white;
+    font-size: 120%;
+    font-weight: 800;
+}
+
+.submitbtn:hover{
+    background: rgb(79, 2, 69);
+    }
+
+/********************************************/
+
+/*
+main Homepage
+*/
+
+div.main{
+    background-color: rgb(222, 222, 222);
+}
+
+div.row1{
+    margin-bottom: 5%;
+    background: white ;
+    padding: 100px;
+}
+
+.middle{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.left{margin-left: 20px;}
+.right{margin-right: 20px;}
+
+.middle-blocks{
+    padding: 50px 25px 50px 25px;
+    background-color: #fff;
+    color: red;
+}
+
+div.testimonial{
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    margin-top: 20px;
+}
+
+.callBtn{
+    background-color: red;
+    border-radius: 15px;
+    padding: 3px 7px;
+    border-color: aquamarine;
+}
+
+.callBtn:hover{
+    background-color: rgb(97, 16, 16);
+    color: white;
+}
+/********************************************/
+
+/*
+Footer
+*/
+div.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(1, 1, 48);
+    color: #ffff;
+}
