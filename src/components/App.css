@@ -172,13 +172,14 @@ div.row1{
     margin-right: 20px;
 }
 
-.left{margin-left: 20px;}
-.right{margin-right: 20px;}
+.left{margin-left: 20px; text-align: center;}
+.right{margin-right: 20px; text-align: center;}
 
 .middle-blocks{
     padding: 50px 25px 50px 25px;
     background-color: #fff;
     color: red;
+    text-align: center;
 }
 
 div.testimonial{
@@ -189,15 +190,19 @@ div.testimonial{
 }
 
 .callBtn{
-    background-color: red;
+    background-color: rgb(20, 5, 110);
     border-radius: 15px;
     padding: 3px 7px;
     border-color: aquamarine;
+    color: white;
+    width: 100px;
+    font-size: larger;
 }
 
 .callBtn:hover{
     background-color: rgb(97, 16, 16);
     color: white;
+   
 }
 /********************************************/
 

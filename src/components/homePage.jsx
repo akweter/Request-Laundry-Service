@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Container } from "@mui/system"
 import Banner from './Banner';
+import Posts from '../api/posts.json';
+import { useState } from 'react';   
 
 export default function Home(){
-    return(
+
+    let postings = JSON.parse(localStorage.getItem("value")) || [];
+
+    let genPost =() =>{
+        return (Posts.map((x) =>{
+            let {id, title, body, userId, tags, reactions}= x;
+            console.log(x.title[0]);
+            let search = postings.find((y) => y.id === id) || [];
+            return`
+            <div>name</div>`;
+    }).join(""));
+    }
+
+        return(
         <div>
              <Banner/>
             <div className='main'>
@@ -17,20 +32,21 @@ export default function Home(){
                         <img src='images/.jpg' alt='Akweter James'/>
                     </div>
                 </div>
-
                 <div className="row">
-                    <div className="col left">
-                        <h3 className="middle-blocks">Get the latest Tips</h3>
+                    <div className="col">
+                        <h3 className="middle-blocks left">Get Our latest Deals</h3>
+                        <li></li>
                     </div>
-                    <div className="col middle">
-                        <h3 className="middle-blocks">Why we are different</h3>
+                    <div className="col">
+                        <h3 className="middle-blocks middle">Become a rider</h3>
+                        <div>{genPost}</div>
                     </div>
-                    <div className="col right">
-                        <h3 className="middle-blocks">Ride and Earn</h3>
+                    <div className="col">
+                        <h3 className="middle-blocks right">Read the imitable posts</h3>
                     </div>
                 </div>
                 <div className="testimonial">Testimonials</div>
             </div>
         </div>
-    );
+    );    
 }

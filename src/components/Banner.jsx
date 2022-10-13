@@ -12,7 +12,6 @@ export default function Banner(){
 
     const Locateme=(e)=>{
         e.preventDefault();
-        //Wriet a function.
         if(Submit == '' || Submit == null){
             const Val = window.localStorage.getItem('value');
             alert(Val + ' is detected as your recent location');
@@ -39,7 +38,7 @@ export default function Banner(){
                 );
         }
     }
-
+    
     return(
         <div>
             <div className="banner">
